@@ -1,0 +1,93 @@
+Cluster Name,Namespace Name,Workload Kind,Workload Name,Workload flagged,Container Name,Attribute Name,Attribute Value,Is Defaulted,Is Set,Is Flagged
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],Host Network,false,false,true,false
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,default,Deployment,client-deployment,true,[Global Attribute - ALL],POD ServiceAccount,,true,false,true
+,default,Deployment,client-deployment,true,client,Image Pull Policy,Always,false,true,false
+,default,Deployment,client-deployment,true,client,Image Name,eranjl/multi-client,false,true,false
+,default,Deployment,client-deployment,true,client,Privileged,true,false,true,true
+,default,Deployment,client-deployment,true,client,Allow Privilege Escalation,true,false,true,true
+,default,Deployment,client-deployment,true,client,Read Only File System,<nil>,true,false,true
+,default,Deployment,client-deployment,true,client,Run As User [CONTAINER],<nil>,true,false,true
+,default,Deployment,client-deployment,true,client,Run As Group [CONTAINER],<nil>,true,false,true
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,default,Deployment,postgres-deployment,false,[Global Attribute - ALL],POD ServiceAccount,,true,false,true
+,default,Deployment,postgres-deployment,false,postgres,Image Pull Policy,Always,false,true,false
+,default,Deployment,postgres-deployment,false,postgres,Image Name,postgres,false,true,false
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,default,Deployment,redis-deployment,false,[Global Attribute - ALL],POD ServiceAccount,,true,false,true
+,default,Deployment,redis-deployment,false,redis,Image Pull Policy,Always,false,true,false
+,default,Deployment,redis-deployment,false,redis,Image Name,redis,false,true,false
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,default,Deployment,server-deployment,false,[Global Attribute - ALL],POD ServiceAccount,,true,false,true
+,default,Deployment,server-deployment,false,server,Image Pull Policy,Always,false,true,false
+,default,Deployment,server-deployment,false,server,Image Name,eranjl/multi-server,false,true,false
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,default,Deployment,worker-deployment,false,[Global Attribute - ALL],POD ServiceAccount,service-app1,false,true,false
+,default,Deployment,worker-deployment,false,worker,Image Pull Policy,Always,false,true,false
+,default,Deployment,worker-deployment,false,worker,Image Name,eranjl/multi-worker,false,true,false
+,default,Deployment,worker-deployment,false,worker,Privileged,false,false,true,false
+,default,Deployment,worker-deployment,false,worker,Allow Privilege Escalation,false,false,true,false
+,default,Deployment,worker-deployment,false,worker,Read Only File System,true,false,true,false
+,default,Deployment,worker-deployment,false,worker,Run As User [CONTAINER],1000,false,true,false
+,default,Deployment,worker-deployment,false,worker,Run As Group [CONTAINER],1000,false,true,false
+,docker,Deployment,compose,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,docker,Deployment,compose,false,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,docker,Deployment,compose,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,docker,Deployment,compose,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,docker,Deployment,compose,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,docker,Deployment,compose,false,[Global Attribute - ALL],POD ServiceAccount,compose,false,true,false
+,docker,Deployment,compose,false,compose,Image Pull Policy,IfNotPresent,false,true,false
+,docker,Deployment,compose,false,compose,Image Name,docker/kube-compose-controller:v0.4.23,false,true,false
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],Host Network,true,false,true,true
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,docker,Deployment,compose-api,true,[Global Attribute - ALL],POD ServiceAccount,compose,false,true,false
+,docker,Deployment,compose-api,true,compose,Image Pull Policy,IfNotPresent,false,true,false
+,docker,Deployment,compose-api,true,compose,Image Name,docker/kube-compose-api-server:v0.4.23,false,true,false
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],Host Network,false,false,true,false
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],DNS Policy,Default,false,true,false
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,kube-system,Deployment,coredns,false,[Global Attribute - ALL],POD ServiceAccount,coredns,false,true,false
+,kube-system,Deployment,coredns,false,coredns,Image Pull Policy,IfNotPresent,false,true,false
+,kube-system,Deployment,coredns,false,coredns,Image Name,k8s.gcr.io/coredns:1.3.1,false,true,false
+,kube-system,Deployment,coredns,false,coredns,Privileged,<nil>,true,false,true
+,kube-system,Deployment,coredns,false,coredns,Allow Privilege Escalation,false,false,true,false
+,kube-system,Deployment,coredns,false,coredns,Read Only File System,true,false,true,false
+,kube-system,Deployment,coredns,false,coredns,Run As User [CONTAINER],<nil>,true,false,true
+,kube-system,Deployment,coredns,false,coredns,Run As Group [CONTAINER],<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],Host Network,true,false,true,true
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],DNS Policy,ClusterFirst,false,true,false
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],Run As User,<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],Run As Non Root,<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],Run As Group,<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,[Global Attribute - ALL],POD ServiceAccount,kube-proxy,false,true,false
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Image Pull Policy,IfNotPresent,false,true,false
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Image Name,k8s.gcr.io/kube-proxy:v1.14.8,false,true,false
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Privileged,true,false,true,true
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Allow Privilege Escalation,<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Read Only File System,<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Run As User [CONTAINER],<nil>,true,false,true
+,kube-system,DaemonSet,kube-proxy,true,kube-proxy,Run As Group [CONTAINER],<nil>,true,false,true
